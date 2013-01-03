@@ -1,7 +1,7 @@
 CEU MicroData
 =============
-Data Backend Call for Bids
---------------------------
+Data Frontend Call for Bids
+-------------ü-------------
 
 Kérem, tegyen árajánlatot az alábbi feladat elvégzésére!
 
