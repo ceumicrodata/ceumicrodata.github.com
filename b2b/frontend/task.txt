@@ -1,1 +1,24 @@
-/Users/koren/Dropbox/grant/KNOWLEDGEFLOWS/products/visualization/bid.txt
+CEU MicroData
+=============
+Data Backend Call for Bids
+--------------------------
+
+Kérem, tegyen árajánlatot az alábbi feladat elvégzésére!
+
+Grafikonrajzoló alkalmazás tervezése és készítése
+
+ - layout szempontjából legföljebb 2 oldaltípus
+ - oldalanként 1 grafikon, vonal vagy oszlopdiagram
+ - adatok betöltése külső adatforrásból, kb. 5 változó, 15 országra, 20 évre, havi bontásban
+ - egyszerű UI felületen (nem menüben és nem formon) lehessen országot, változót és időtávot választani
+ - a grafikont különböző formátumban le lehessen menteni (pl SVG és PNG)
+
+A projekt során egy backend fejlesztővel és egy designerrel kell együttműködnie. Előbbi segít annak meghatározásában hogy pontosan milyen lekérdezésre pontosan milyen adatot és milyen formában kap az alkalmazás. Utóbbi segít a vizuális elemek megtervezésében, a grafikon szín és vonalvilága, betűtípusok, térközök, ikonok kiválasztásában. 
+
+A projekt végén öntől a .html, .css, .js (ill egyéb) fájlok forráskódjait várjuk, és hogy az alkalmazást telepítse a webszerverünkre. Néhány személyes találkozó után rugalmas beosztással távmunkában dolgozna.
+
+Kérem, nekem címzett, angol nyelvű árajánlatában (Közép-európai Egyetem, 1051 Budapest, Nádor u. 9.) írja meg, hogy
+ - hány mérnökórára becsli a feladat elvégzését (ez még nem kötelezettségvállalás, de a tervezésben segít),
+ - milyen áron vállalja a becsült és az azon felüli mérnökórákat,
+ - mikorra tudja vállalni a feladat elvégzését.
+

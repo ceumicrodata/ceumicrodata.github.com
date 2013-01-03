@@ -1,1 +1,44 @@
-/Users/koren/Dropbox/grant/KNOWLEDGEFLOWS/products/backend/task.txt
+CEU MicroData
+=============
+Data Backend Call for Bids
+--------------------------
+
+We want to build a data backend for a web application serving economic time series data. Our backend will serve the following functions:
+
+1. Load data into memory or an on-disk staging area from various sources:
+ - SQL database (Postgres, MySQL, sqlite)
+ - separated, fixed-width and JSON text file located on
+ 	- local server
+ 	- http
+ 	- git repository
+ - Google spreadsheet
+Data sources will be defined in a config file, in any human- and machine-readable format (.ini config file, YAML, JSON or XML, any simple scripting language). Beyond checking for resource availability (missing file, 404 on http), no further data auditing is needed at this point.
+
+2. Maintain a unified namespace for data sets, mapping URIs to actual sources, e.g.
+"/geo/whitelist/street/election" would point to a Git repository holding .csv files of street names in the Hungarian electoral districts dataset. Each resource loaded in step 1 should have a unique URI.
+
+3. Serve time series data through a RESTful API. E.g., "GET /macro/gdp/hungary" should yield a JSON document of all available Hungarian GDP data. Only GET requests are relevant for now. This application will work on a single dataset with a unified data structure (e.g., /macro/gdp/poland, /macro/unemployment/hungary), not on all the datasets we have. The actual data may come from different sources, however, and it should be transparent to the user (see points 1 and 2).
+
+A partial solution may expose only some of the above resource types to the API. The mappings and access control should be set in a config file.
+
+4. (optional) Allow filtering of time-series data through GET parameters, e.g. "GET /macro/gdp/hungary?start=1992-Q1&end=2010-Q4". The filter should handle the time dimension only, selecting start and end dates.
+
+5. Cache the most requested time series data so that GET requests do not query the underlying source data. Set simple expiry for the cache, e.g. "/macro/gdp expires in 24 hours".
+
+6. (optional) Propose solutions for a unified interface to enter and update data. Given a structure defined in the config file, expose some of the fields for easy editing. E.g., add new quarterly GDP numbers.
+
+You will select open-source components (database engine, webserver, web framework, cache, ETL scripts), customize them and write necessary custom modules to build our backend. You will develop, test and deploy the backend on our production server. If you are not interested in parts of the project, please note so in your bid.
+
+In your bid, please provide a price quote separately for each of the functionalities as follows: estimated number of work hours, hourly rate, estimated time of completion (in work days). Also include an hourly rate for overtime and for after-sales support and consulting. Please name, without commitment, at least one open-source tool for each component that you think would be suitable. Please refer to the original numbering 1 through 6.
+
+Please submit your bid in English, addressed to 
+
+	Miklós Koren
+	associate professor
+	Közép-európai Egyetem
+	Nádor u. 9.
+	1051 Budapest.
+
+Feel free to include any relevant references.
+
+The purchase is financed by the European Research Council (ERC KNOWLEDGEFOWS) and is subject to university procurement and ethical conduct policies.
