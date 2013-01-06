@@ -1,0 +1,33 @@
+Koncepció
+---------
+- Nagyon tetszik a koncepció, ami visszaadja az adatelemzés lényegét.
+- A többféle, de felismerhető minta is tetszik.
+- Az adatmátrixból kiemelkedő mintázatról Sándor Mátyás titkosírása jutott eszembe, ahol a rácson néhány ablak kivételével minden ki van takarva. Ezt csak így ideírom.
+
+Formák
+------
+- Tetszik a tetrises, számítógépesebb forma.
+- Az iskolai színes rudakra is emlékeztetnek, ez sem baj!
+- Az éles sarkokon gondolkoztam, nem érdemes-e puhítani őket. Erről két dolog jut eszembe:
+	- vízfestékes ecsetvonás (ld. még színek)
+	- szövegkihúzó. A PDF-jelölő programok kicsit direkt hullámosítják a szövegkiemelést, hogy úgy nézzen ki, mintha ember húzta volna ki: http://ceumicrodata.github.com/b2b/design/highlighter.png 
+- Ez emberibbé tehet a dolgot, elvész viszont az első két utalás.
+- A csak sarkon érintkező betűket nem lehet így megoldani.
+
+Színek
+------
+- Tetszenek a kicsit koszos nyomdai alapszínek. 
+- A vízfesték jut róla eszembe, szabadkézibb forma esetén ez az utalás erősíthető.
+
+Betűk
+-----
+- Betűformák szépek, de túl vékonynak tűnnek. Nem olvashatók könnyen, és nem adnak összefüggő szövetet. Talán valamivel vastagabb betűket is elbír.
+- Túl szájbarágós, ha a CEU MICRO DATA-t vastagítással is kiemeljük? Többen nem tudtuk elolvasni elsőre (másodikra), szövegként nem emelkedett ki.
+- Ha jól értem, balról jobbra haladunk, de így a Data a Micro fölé kerül. Nem kéne helyet cserélniük?
+- Kb. 1/3-ad arányban számokat is lehetne belékeverni, ettől még nem ugranak ki a betűk túlságosan.
+
+Térköz
+------
+- A szellős térköz az egyedi jelleget hangsúlyozza, minden adatpont egy külön egyed.
+- A nagytömegű adat azért valamennyire nyomasztó is, kevésbé szellős térközzel, vastagabb betűvel talán ez átadható.
+- Persze nem nyomasztani akarunk, de talán egy szövetjellege lehetne, ami arra elég, hogy ellustuljon a szem, és ne egyenként nézze a betűket.
