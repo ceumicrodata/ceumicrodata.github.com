@@ -12,7 +12,11 @@ We want to build a data backend for a web application serving economic time seri
  	- http
  	- git repository
  - Google spreadsheet
-Data sources will be defined in a config file, in any human- and machine-readable format (.ini config file, YAML, JSON or XML, any simple scripting language). Beyond checking for resource availability (missing file, 404 on http), no further data auditing is needed at this point.
+Data sources will be defined in a config file, in any human- and machine-readable format (.ini config file, YAML, JSON or XML, any simple scripting language). Beyond checking for resource availability (missing file, 404 on http), no further data auditing is needed at this point. We currently have about 30 different data sets.
+
+Data sets contain either tabular data (where each row has the same columns), or documents. We do not currently store relational or hierarchical data in document stores, so each document is a text or an associative array.
+
+The size of data sets varies widely. We have some SQL tables with millions of rows and many flat files with rows in the low tens of thousands.
 
 2. Maintain a unified namespace for data sets, mapping URIs to actual sources, e.g.
 "/geo/whitelist/street/election" would point to a Git repository holding .csv files of street names in the Hungarian electoral districts dataset. Each resource loaded in step 1 should have a unique URI.
@@ -29,7 +33,7 @@ A partial solution may expose only some of the above resource types to the API. 
 
 You will select open-source components (database engine, webserver, web framework, cache, ETL scripts), customize them and write necessary custom modules to build our backend. You will develop, test and deploy the backend on our production server. If you are not interested in parts of the project, please note so in your bid.
 
-In your bid, please provide a price quote separately for each of the functionalities as follows: estimated number of work hours, hourly rate, estimated time of completion (in work days). Also include an hourly rate for overtime and for after-sales support and consulting. Please name, without commitment, at least one open-source tool for each component that you think would be suitable. Please refer to the original numbering 1 through 6.
+In your bid, please provide a price quote separately for each of the functionalities as follows: estimated number of work hours, hourly rate, estimated time of completion (in work days). Also include an hourly rate for overtime and for after-sales support and consulting. Please name, without commitment, at least one tool for each component that you think would be suitable. We prefer open source tools, but other industry-standard tools are also acceptable. Please refer to the original numbering 1 through 6.
 
 Please submit your bid in English, addressed to 
 
@@ -40,5 +44,7 @@ Please submit your bid in English, addressed to
 	1051 Budapest.
 
 Feel free to include any relevant references.
+
+Your price quote will help us select the best solution for our needs. If necessary, we may mix and match suppliers for the different components. Based on subsequent negotiations, we would like to offer a time contract, paying an hourly rate with a specified minimum and maximum total amount. 
 
 The purchase is financed by the European Research Council (ERC KNOWLEDGEFOWS) and is subject to university procurement and ethical conduct policies.
